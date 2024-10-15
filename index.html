@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Feedback Form</title>
+    <style>
+        #main{
+            padding: 10px;
+            border: 2px solid black;
+            height: auto;
+            width: 350px;
+            margin-top: 80px;
+            margin-left: 38%;
+            border-radius: 2%;
+            background-color: rgb(220, 213, 213);
+        }
+      
+        h4{
+            margin-bottom: 0%;
+            margin-top: 0%;
+        }
+
+        #wide{
+            width: 300px;
+            border-radius: 10%;
+            border: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body style="background-color: rgb(170, 53, 120);">
+    <h1 style="text-align: center;">Feedback Form</h1>
+   <div id="main">
+    <div style="height: 40px; margin: 0%;">
+        <h4>Feedback Type:</h4>
+        <select name="feedback" id="wide"> 
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+            <option value="very_poor">Very Poor</option>
+        </select>
+    </div>
+   
+    <div style="margin-top: 10px;">
+        <h4>Message:</h4>
+        <textarea style="height: 50px;" id="wide"></textarea>
+    </div>
+
+    <div  style="margin-top: 10px; font-weight: bold;">
+        <h4 style="margin-left: 5px;">Website Rating:</h4>
+        <input type="radio" name="rating">Excellent
+        <input type="radio" name="rating">Good
+        <input type="radio" name="rating">Average
+        <input type="radio" name="rating">Poor
+        
+    </div>
+
+    <div style="margin-top: 10px;">
+        <h4 >Age (10-100):</h4>
+        <input type="number" min="10" max="100" id="wide">
+    </div>
+     
+    <div style="margin-top: 10px;">
+        <h4 >Email<span style="color: red;">*</span>:</h4>
+        <input type="email" name="email" id="wide" required>
+    </div>
+
+    <div style="margin-top: 10px;">
+        <h4 >Password (min. 8 characters):</h4>
+        <input type="password" id="wide" required>
+    </div>
+
+    <div style="margin-top: 10px;">
+        <h4 >Website URL (optional):</h4>
+        <input type="text" id="wide">
+    </div>
+
+    <div style="font-weight: bold; margin-top: 10px;" >
+        <input type="checkbox">I agree to the terms & conditions.
+        <input style="text-align: center; display: block; margin-left: 140px; background-color: aquamarine; color: blueviolet;" type="submit" value="Submit">
+    </div>
+</body>
+</html>
+
+
+
+
